@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Mi murcielaguita preciosa 🖤</title>
+
+<style>
+
+body{
+margin:0;
+
+min-height:100vh;
+
+padding:40px;
+
+overflow:auto;
+
+font-family:Georgia;
+
+color:white;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+/* Fondo */
+
+background:
+radial-gradient(
+circle at top,
+#4b1d72,
+#09010f);
+
+position:relative;
+
+}
+
+/* Vitral gótico */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+
+repeating-radial-gradient(
+circle at center,
+
+transparent 0 80px,
+
+rgba(255,255,255,.02)
+80px 84px
+
+);
+
+opacity:.45;
+
+pointer-events:none;
+
+}
+
+/* Decoración */
+
+/* Murciélago decorativo */
+
+body::after{
+
+content:"🦇";
+
+position:fixed;
+
+top:25px;
+
+left:50%;
+
+transform:
+translateX(-50%);
+
+font-size:60px;
+
+color:#d8b4ff;
+
+opacity:.45;
+
+filter:
+
+drop-shadow(
+0 0 10px #a855f7)
+
+drop-shadow(
+0 0 20px #7e22ce);
+
+pointer-events:none;
+
+animation:
+flotar 4s infinite ease-in-out;
+
+}
+
+@keyframes flotar{
+
+0%{
+
+transform:
+translateX(-50%)
+translateY(0);
+
+}
+
+50%{
+
+transform:
+translateX(-50%)
+translateY(-8px);
+
+}
+
+100%{
+
+transform:
+translateX(-50%)
+translateY(0);
+
+}
+
+}
+
+/* Título */
+
+h1{
+
+font-size:55px;
+
+text-align:center;
+
+color:#d8b4ff;
+
+text-shadow:
+
+0 0 15px #a855f7,
+0 0 35px #7e22ce;
+
+margin-bottom:35px;
+
+}
+
+/* Botón */
+
+button{
+
+padding:16px 35px;
+
+border:none;
+
+border-radius:15px;
+
+background:#5b218a;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.4s;
+
+box-shadow:
+
+0 0 15px #7e22ce;
+
+}
+
+button:hover{
+
+transform:
+scale(1.08);
+
+background:#7e22ce;
+
+box-shadow:
+
+0 0 25px #c084fc;
+
+}
+
+/* Carta */
+
+#carta{
+
+width:700px;
+
+max-width:90%;
+
+margin-top:35px;
+
+padding:35px;
+
+background:
+rgba(20,10,30,.88);
+
+border:
+
+1px solid #a855f7;
+
+border-radius:25px;
+
+backdrop-filter:
+blur(12px);
+
+box-shadow:
+
+0 0 40px
+rgba(168,85,247,.5);
+
+opacity:0;
+
+visibility:hidden;
+
+transform:
+translateY(40px);
+
+transition:
+all .8s;
+
+}
+
+/* Texto */
+
+#carta p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#f3e8ff;
+
+}
+
+/* Playlist */
+
+iframe{
+
+width:100%;
+
+margin-top:25px;
+
+border:none;
+
+border-radius:20px;
+
+box-shadow:
+
+0 0 25px
+rgba(192,132,252,.3);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>
+Feliz aniversario mi reina 🖤
+</h1>
+
+<button onclick="abrirCarta()">
+Abrir carta 💌
+</button>
+
+<div id="carta">
+
+<p>
+
+Mi reina preciosa.
+
+exactamente hace 1 año empece a sentir por ti lo que por nadie más habia sentido
+jamás, es increible porque incluso había llegado a pensar que nunca
+podría enamorarme de alguien, hasta que apareciste en mi vida.
+
+Me encanta que a tu lado todo se siente con la misma intensidad aunque
+nos conozcamos desde ya hace tiempo.
+
+Cada beso, cada abrazo, cada mirada, cada
+vez que voy a visitarte o tu vienes a verme,
+me pongo super nerviosa y me fascina.
+
+cuando pienso en ti me sonrojo de una forma,
+te juro que es imposible pasar frio con
+el calor que llega a mis mejillas después de eso.
+
+<b>
+ES TAN LINDO SENTIR TODO ESTO POR TI
+</b>
+
+Quiero que sepas que este aniversario es muy importante para mí.
+
+y tanto como este habrán muchisimos.
+
+nuestro amor durará toda la vida y después de la vida cumpliremos aún más años de muerte,
+pero siempre amandonos.
+
+Mi Reina,
+eres lo más preciado que podría tener a mi lado.
+
+A pesar de que antes respiraba,
+comía y tenía mi rutina diaria,
+nada podía hacerme sentir realmente viva.
+
+así que este aniversario también significa para mí,
+un año de haber empezado a vivir.
+Gracias mi amorcito. Gracias por darnos otra oportunidad como pareja
+daré todo de mí para no decepcionarte más. quiero estar contigo por siempre
+solo contigo, no necesito a nadie más que tú.
+<strong>TE AMOO</strong>
+<h5> aquí te dejo una playlist jiji cosita linda</h5>
+</p>
+
+<iframe
+
+src= "https://open.spotify.com/embed/playlist/06LO8IdN4RKO6tqlMoqz4U?si=GoyKRZwKRsuGB3-JeixKsw"
+height="152"
+https:
+allowfullscreen
+
+loading="lazy">
+
+</iframe>
+
+</div>
+
+<script>
+
+function abrirCarta(){
+
+const carta =
+document.getElementById("carta");
+
+carta.style.opacity="1";
+
+carta.style.visibility="visible";
+
+carta.style.transform=
+"translateY(0)";
+
+}
+
+</script>
+
+</body>
+
+</html>
